@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  width: 220px;
   pointer-events: none;
 }
 
@@ -35,4 +35,102 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f3f4;
+  width: 98vw;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  background-color: #fff;
+  width: 40vw;
+  box-shadow: 0 0 0.5cm #7b7d7d;
+}
+
+.right {
+  width: 60vw;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.right p {
+  margin: 0;
+}
+
+.right .page {
+  background: white;
+  color: #2e4053;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm #7b7d7d;
+  width: 21cm;
+  height: 29.7cm;
+}
+.right .buttons {
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    right: 0;
+}
+.right .buttons .delete-all {
+  color: #fff;
+  margin: 10px;
+  background-color: #ff00ae;
+}
+.right .buttons .save-pdf {
+  color: #fff;
+  margin: 0px 10px;
+  background-color: #0971f1;
+}
+
+@media print {
+  @page {
+    margin: 0;
+  }
+  body * {
+    visibility: hidden;
+    -webkit-print-color-adjust: exact;
+  }
+  .page * {
+    visibility: visible;
+    -webkit-print-color-adjust: exact;
+  }
+  .page {
+    position: fixed;
+    left: 0px;
+    top: -50px;
+    width: 100%;
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .left {
+    background-color: #fff;
+    width: 100vw;
+    box-shadow: 0 0 0.5cm #7b7d7d;
+  }
+
+  .right {
+    height: 10vh;
+    font-family: 'Roboto', sans-serif;
+  }
+
 }
