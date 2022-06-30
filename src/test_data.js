@@ -12,7 +12,7 @@ const data = {
       "Ful-Stack Developer with 15+ years of hands-on experience designing, developing, and implementing applications and solutions using a range of technologies and programming languages. Seeking to leverage broad development experience in a challenging, fast and forward-thinking role.",
   },
   professional: {
-    company1: "BananaDog Media",
+    company1: "Pretty Cool Place",
     local1: "Las Vegas, NV 89109, USA",
     position1: "Creative Director",
     start1: "February 2012",
