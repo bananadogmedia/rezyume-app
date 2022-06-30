@@ -5,7 +5,7 @@ import { ResumeContext } from "../../../contexts/ResumeContext";
 function EducationPrev() {
   const { content, control, contentTest } = useContext(ResumeContext);
 
-  //If the "control" is TRUE - use "Test State" to show the example on the page
+  // If the "control" is TRUE - use "Test State" to show the example on the page
   let contentUse;
   if (control) {
     contentUse = contentTest;
@@ -13,7 +13,7 @@ function EducationPrev() {
     contentUse = content;
   }
 
-  //If there is no data, the Title of the section will not be displayed
+  // If no data, Title will not be displayed
   let title;
   if (Object.keys(contentUse.education).length === 0) {
     title = "";

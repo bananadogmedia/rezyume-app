@@ -10,19 +10,23 @@ import logo from "../../logo.png";
 import { ResumeContext } from "../../contexts/ResumeContext";
 import { fontWeight } from "@mui/system";
 
+// Left component with sub menu
 function Standard() {
   const { control, addTestData, removeTestData } = useContext(ResumeContext);
 
+  // Adds Test Data to Preview
   function useTestData(e) {
     e.preventDefault();
     addTestData();
   }
 
+  // Removes Test Data from Preview
   function clearTestData(e) {
     e.preventDefault();
     removeTestData();
   }
 
+  // Component controlled buttons
   let expData;
   if (control) {
     expData = (
@@ -50,6 +54,7 @@ function Standard() {
     );
   }
 
+  // Routed buttons that create sub menu while Standard persists
   return (
     <div className="left">
       <div className={myClasses.headerLeft}>
@@ -61,7 +66,7 @@ function Standard() {
         <div styles={{ flexGrow: 1 }}>{expData}</div>
       </div>
 
-      <div className="">
+      <div className="left-body">
           <div className={myClasses.topLeft}>
             <Button
               color='secondary'

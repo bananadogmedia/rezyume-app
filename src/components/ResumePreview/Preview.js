@@ -9,9 +9,10 @@ import Tooltip from "@mui/material/Tooltip";
 import Link from "@mui/material/Link";
 import { ResumeContext } from "../../contexts/ResumeContext";
 
-function Preview() {
-  const { setContent } = useContext(ResumeContext);
-  //const classes = useStyles();
+// Preview renders the Paper component as well as the 2 buttons to Delete Data and Print/Save to PDF
+export default function Preview() {
+  const { setContent} = useContext(ResumeContext);
+
   const handleDeleteDate = (event) => {
     event.preventDefault();
     localStorage.clear();
@@ -49,5 +50,3 @@ function Preview() {
       </div>
   );
 }
-
-export default Preview;

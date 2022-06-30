@@ -30,7 +30,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="Employer"
-          name="company1"
           variant="outlined"
           defaultValue={content.professional.company1}
           {...register("company1")}
@@ -40,7 +39,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="City, State, Country"
-          name="local1"
           variant="outlined"
           defaultValue={content.professional.local1}
           {...register("local1")}
@@ -50,7 +48,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="Position"
-          name="position1"
           variant="outlined"
           defaultValue={content.professional.position1}
           {...register("position1")}
@@ -60,7 +57,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="Start MM/YYYY"
-          name="start1"
           variant="outlined"
           defaultValue={content.professional.start1}
           {...register("start1")}
@@ -70,7 +66,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="End MM/YYYY"
-          name="end1"
           variant="outlined"
           defaultValue={content.professional.end1}
           {...register("end1")}
@@ -80,7 +75,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="Job Description"
-          name="desc1[0]"
           variant="outlined"
           defaultValue={content.professional.desc1[0]}
           {...register("desc1[0]")}
@@ -89,7 +83,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="Job Description"
-          name="desc1[1]"
           variant="outlined"
           defaultValue={content.professional.desc1[1]}
           {...register("desc1[1]")}
@@ -98,7 +91,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="Job Description"
-          name="desc1[2]"
           variant="outlined"
           defaultValue={content.professional.desc1[2]}
           {...register("desc1[2]")}
@@ -117,7 +109,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="Employer"
-          name="company2"
           variant="outlined"
           defaultValue={content.professional.company2}
           {...register("company2")}
@@ -127,7 +118,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="City, State, Country"
-          name="local2"
           variant="outlined"
           defaultValue={content.professional.local2}
           {...register("local2")}
@@ -137,7 +127,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="Position"
-          name="position2"
           variant="outlined"
           defaultValue={content.professional.position2}
           {...register("position2")}
@@ -147,7 +136,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="Start MM/YYYY"
-          name="start2"
           variant="outlined"
           defaultValue={content.professional.start2}
           {...register("start2")}
@@ -157,7 +145,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="End MM/YYYY"
-          name="end2"
           variant="outlined"
           defaultValue={content.professional.end2}
           {...register("end2")}
@@ -167,7 +154,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="Job Description"
-          name="desc2[0]"
           variant="outlined"
           defaultValue={content.professional.desc2[0]}
           {...register("desc2[0]")}
@@ -176,7 +162,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="Job Description"
-          name="desc2[1]"
           variant="outlined"
           defaultValue={content.professional.desc2[1]}
           {...register("desc2[1]")}
@@ -185,7 +170,6 @@ function Professional() {
         <TextField
           id="outlined-basic"
           label="Job Description"
-          name="desc2[2]"
           variant="outlined"
           defaultValue={content.professional.desc2[2]}
           {...register("desc2[2]")}

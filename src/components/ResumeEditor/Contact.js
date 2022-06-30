@@ -5,11 +5,12 @@ import { useForm } from "react-hook-form";
 import { ResumeContext } from "../../contexts/ResumeContext";
 
 function Contact() {
-  const { content, updateContactData, removeTestData } = useContext(
+  const { content, updateContactData, removeTestData} = useContext(
     ResumeContext
   );
 
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit} = useForm();
+
   const onSubmit = data => {
     removeTestData();
     updateContactData(data);
@@ -27,7 +28,6 @@ function Contact() {
         <TextField
           id="outlined-basic"
           label="Full Name"
-          name="name"
           variant="outlined"
           defaultValue={content.contact.name}
           {...register("name")}
@@ -37,7 +37,6 @@ function Contact() {
         <TextField
           id="outlined-basic"
           label="Address"
-          name="address"
           variant="outlined"
           defaultValue={content.contact.address}
           {...register("address")}
@@ -47,7 +46,6 @@ function Contact() {
         <TextField
           id="outlined-basic"
           label="City"
-          name="city"
           variant="outlined"
           defaultValue={content.contact.city}
           {...register("city")}
@@ -57,7 +55,6 @@ function Contact() {
         <TextField
           id="outlined-basic"
           label="State"
-          name="state"
           variant="outlined"
           defaultValue={content.contact.state}
           {...register("state")}
@@ -67,7 +64,6 @@ function Contact() {
         <TextField
           id="outlined-basic"
           label="Zip Code"
-          name="zip"
           variant="outlined"
           defaultValue={content.contact.zip}
           {...register("zip")}
@@ -77,7 +73,6 @@ function Contact() {
         <TextField
           id="outlined-basic"
           label="Phone"
-          name="phone"
           variant="outlined"
           defaultValue={content.contact.phone}
           {...register("phone")}
@@ -87,7 +82,6 @@ function Contact() {
         <TextField
           id="outlined-basic"
           label="E-mail"
-          name="email"
           variant="outlined"
           defaultValue={content.contact.email}
           {...register("email")}
@@ -97,7 +91,6 @@ function Contact() {
         <TextField
           id="outlined-multiline-static"
           label="Summary"
-          name="summary"
           multiline
           rows={7}
           variant="outlined"

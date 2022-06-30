@@ -5,7 +5,7 @@ import { ResumeContext } from "../../../contexts/ResumeContext";
 function ContactPrev() {
   const { content, control, contentTest } = useContext(ResumeContext);
 
-  //If the "control" is TRUE - use "Test State" to show the example on the page
+  // If the "control" is TRUE - use "Test State" to show the example on the page
   let contentUse;
   if (control) {
     contentUse = contentTest;
@@ -20,9 +20,18 @@ function ContactPrev() {
     divider = "";
   }
 
+  let contactClass;
+  if (Object.keys(contentUse.contact).length > 0){
+    contactClass = classes.contactResume
+  }
+  else {
+    contactClass = ''
+  }
+
+
   return (
     <div>
-      <div className={classes.contactResume}>
+      <div className={contactClass}>
         <div className={classes.contentHeader}>
           <h1 className={classes.h1Name}>{contentUse.contact.name}</h1>
           <p>

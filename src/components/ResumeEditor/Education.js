@@ -30,7 +30,6 @@ function Education() {
         <TextField
           id="outlined-basic"
           label="School"
-          name="school"
           variant="outlined"
           defaultValue={content.education.institution}
           {...register("school")}
@@ -40,7 +39,6 @@ function Education() {
         <TextField
           id="outlined-basic"
           label="City, State, Country"
-          name="city"
           variant="outlined"
           defaultValue={content.education.city}
           {...register("city")}
@@ -50,7 +48,6 @@ function Education() {
         <TextField
           id="outlined-basic"
           label="Field Of Study"
-          name="major"
           variant="outlined"
           defaultValue={content.education.major}
           {...register("major")}
@@ -60,7 +57,6 @@ function Education() {
         <TextField
           id="outlined-basic"
           label="Graduation Year"
-          name="gradYear"
           variant="outlined"
           defaultValue={content.education.gradYear}
           {...register("gradYear")}
@@ -70,7 +66,6 @@ function Education() {
         <TextField
           id="outlined-basic"
           label="Additional Info"
-          name="additional"
           variant="outlined"
           defaultValue={content.education.additional}
           {...register("additional")}

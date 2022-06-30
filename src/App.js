@@ -9,6 +9,7 @@ import thumbn from "./standard2.png";
 import Button from '@mui/material/Button';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
+// Creates Global Theme for colors
 const theme = createTheme({
   status: {
     danger: '#e53e3e',
@@ -25,6 +26,7 @@ const theme = createTheme({
   },
 });
 
+// Creates the container for Templates
 function Templates() {
   return (
     <div className="left">
@@ -56,9 +58,11 @@ function Templates() {
   );
 }
 
+// Main App
 function App() {
   return (
     <div className="app">
+      {/* BrowserRouter is wrapped in index.js. This also wraps the Theme Colors for Resume Context */}
       <ThemeProvider theme={theme}>
         <ResumeContextProvider>
             <Routes>

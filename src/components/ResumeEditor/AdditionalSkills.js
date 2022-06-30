@@ -30,7 +30,6 @@ function AdditionalSkills() {
         <TextField
           id="outlined-basic"
           label=""
-          name="skill1"
           variant="outlined"
           placeholder="e.g. Front End Development"
           defaultValue={content.additional[0]}
@@ -41,7 +40,6 @@ function AdditionalSkills() {
         <TextField
           id="outlined-basic"
           label=""
-          name="skill2"
           variant="outlined"
           placeholder="e.g. Back End Development"
           defaultValue={content.additional[1]}
@@ -52,7 +50,6 @@ function AdditionalSkills() {
         <TextField
           id="outlined-basic"
           label=""
-          name="skill3"
           variant="outlined"
           placeholder="e.g. Awards"
           defaultValue={content.additional[2]}
@@ -63,7 +60,6 @@ function AdditionalSkills() {
         <TextField
           id="outlined-basic"
           label=""
-          name="skill4"
           variant="outlined"
           placeholder="e.g. Certificates"
           defaultValue={content.additional[3]}
@@ -74,7 +70,6 @@ function AdditionalSkills() {
         <TextField
           id="outlined-basic"
           label=""
-          name="skill5"
           variant="outlined"
           placeholder="e.g. Spoken Languages"
           defaultValue={content.additional[4]}

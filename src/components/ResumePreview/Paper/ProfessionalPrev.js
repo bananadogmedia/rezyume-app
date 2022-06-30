@@ -11,7 +11,8 @@ function ProfessionalPrev() {
   } else {
     contentUse = content;
   }
-
+  
+  // If no data, Title will not be displayed
   let title;
   if (Object.keys(contentUse.professional).length < 3) {
     title = "";
